@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{% block subject %}
+
+    {% blocktrans %}Account Activation on {{ site_name }}{% endblocktrans %}
+
+{% endblock %}
+
+{% block html_body %}
+
+    <p><a href="{{ protocol }}://{{ domain }}{{ url | safe }}">{{ protocol }}://{{ domain }}{{ url | safe }}</a></p>
+
+{% endblock %}
